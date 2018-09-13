@@ -22,10 +22,7 @@ function answerLastQuestion (currentElement, answer) {
   }
 }
 
-
 function showAndHideElementsReset (currentElement, nextElement) {
-  document.getElementById(currentElement).classList.remove('active');
-  document.getElementById(nextElement).classList.add('active');
-  answers.length = [];
-
+  showAndHideElements(currentElement, nextElement);
+  answers = [];
 }

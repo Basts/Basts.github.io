@@ -10,8 +10,7 @@ body {
 
 .container {
   text-align: center;
-  margin-top: 200px;
-  margin-bottom: 400px;
+
 }
 
 
@@ -19,6 +18,8 @@ body {
 
 .container1.active, .container2.active, .container3.active{
   display: block;
+  margin-top: 200px;
+  margin-bottom: 400px;
 }
 
 .warning{
