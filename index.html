@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="container">
+     <div class="container1 active" id="container1">
+       <h1>Czy chcesz uzyskać dostęp?</h1>
+        <button  class="btn" onclick="answerQuestion('container1', 'container2', false)">NIE</button>
+        <button type="button" class="btn" id="button2" onclick="answerQuestion('container1', 'container2', true)">TAK</button>
+      </div>
+
+
+      <div class="container2" id="container2">
+        <h1>Czy w Krakowie znajduje się biuro Adprofity?</h1>
+        <button type="button" class="btn" onclick="answerQuestion('container2', 'container3', false)">NIE</button>
+        <button type="button" class="btn" onclick="answerQuestion('container2', 'container3', true)">TAK</button>
+      </div>
+
+      <div class="container3" id="container3">
+        <h1>Czy warto dołączyć do zespołu Adprofity?</h1>
+        <button type="button" class="btn" onclick="answerLastQuestion('container3', true)" >OCZYWIŚCIE!</button>
+        <button type="button" class="btn" onclick="answerLastQuestion('container3', false)">NIE!</button>
+      </div>
+  </div>
+
+  <div class="warning" id="warning">
+    <h1>BRAK DOSTĘPU</h1>
+    <button type="button" class="btn" onclick="showAndHideElementsReset('warning', 'container1')">Powrót</button>
+  </div>
+
+
+  <div class="cv" id="cv">
+    <div class="row">
+      <div class="left" id="column1">
+        <div class="picture">
+          <img id="profil-picture" src="https://adprofity.com/recruitment/front-end/task1/assets/person.png" alt="profil-picture" />
+        </div>
+          <h1>JOHN SMITH</h1>
+          <h2 id="web"><i>WEB DEVELOPER</i></h2>
+            <div class="contact">
+                <h3>CONTACT</h3>
+                <div class="rowTab">
+
+                  <ul>
+                    <li><i class="far fa-envelope"></i> johnsmith@company.com</li>
+                    <li><i class="fas fa-phone"></i> +62 0819090168930</li>
+                    <li><i class="fas fa-home" id="home"></i> Merkid, Yogyakarta</li>
+                    <li><i class="fas fa-globe"></i> www.jhonmrongos.com</li>
+                  </ul>
+                </div>
+              </div>
+            <div class="hobbies">
+                <h3>HOBBIES</h3>
+                <ul>
+                  <li><i class="fas fa-plane"></i><span>Travel</span></li>
+                  <li><i class="fas fa-music" id="fa__music"></i> <span>Music</span></li>
+                  <li><i class="fas fa-book-open"></i> <span>Reading</span></li>
+                  <li><i class="fas fa-pen" id="fa__writing"></i> <span>Writing</span></li>
+                </ul>
+              </div>
+            <footer>
+              <ul>
+                <li>Twiter: @Johndoe</li>
+                <li>Facebook: John Doe</li>
+
+              </ul>
+
+            </footer>
+          </div>
+      <div class="right" id="column2">
+        <div class="profile">
+
+          <h2><i class="fas fa-user"></i> PROFILE</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec magna eu turpis interdum hendrerit id sed arcu. Ut ultricies sollicitudin arcu, congue commodo justo vestibulum faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Cras porttitor semper pulvinar.
+          </p>
+          <p>
+            Sed hendrerit tristique lacus tempor tempus. Cras vel sagittis enim. Aenean dolor odio, pulvinar id lacinia et, posuere in ante. Etiam egestas justo quis accumsan vestibulum. Aenean libero enim, facilisis vel lectus sed, tristique consequat sapien. Aenean
+            facilisis enim non pharetra pulvinar. Nulla imperdiet neque quis justo egestas commodo. In pellentesque vel nisi nec euismod.
+          </p>
+
+        </div>
+        <div class="education">
+          <h2><i class="fas fa-graduation-cap"></i> EDUCATION</h2>
+          <div class="education1">
+            <h4><span>&#9679;</span>UNIVERSITY OF YK</h4>
+
+            <h5>Bachelor in Technology Information</h5>
+            <h6>2011-2014</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. </p>
+
+            <h4><span>&#9679;</span>UNIVERSITY OF GK</h4>
+
+            <h5>Master in Technology Information</h5>
+            <h6>2014-2016</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. </p>
+
+          </div>
+        </div>
+        <div class="experience">
+          <h2><i class="fas fa-desktop"></i> EXPERIENCE</h2>
+          <div class="experience1">
+            <h4><span>&#9679;</span>DUGAB YK.CO</h4>
+            <h5>Junior Web Developer</h5>
+            <h6>2016</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. </p>
+          </div>
+        </div>
+        <div class="skills">
+          <h2><i class="fas fa-cogs"></i> SKILLS</h2>
+          <div class="set-size charts-container">
+            <ul>
+              <li>
+                <div class="pie-wrapper progress-25 style-2">
+                  <div class="pie">
+                    <span class="label">25%</span>
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                  </div>
+                  <div class="shadow"></div>
+                </div>
+                <span class="java">Java</span>
+              </li>
+              <li>
+                <div class="pie-wrapper progress-55 style-2">
+                  <span class="label">55%</span>
+                  <div class="pie">
+
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                  </div>
+                  <div class="shadow"></div>
+                </div>
+                <span class="php">PHP</span>
+              </li>
+              <li>
+                <div class="pie-wrapper progress-50 style-2">
+                  <span class="label">50%</span>
+                  <div class="pie">
+
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                  </div>
+                  <div class="shadow"></div>
+                </div>
+                <span class="c">C#</span>
+              </li>
+              <li>
+                <div class="pie-wrapper progress-70 style-2">
+                  <span class="label">70%</span>
+                  <div class="pie">
+
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                  </div>
+                  <div class="shadow"></div>
+                </div>
+                <span>HTML5</span>
+              </li>
+              <li>
+                <div class="pie-wrapper progress-85 style-2">
+                  <span class="label">85%</span>
+                  <div class="pie">
+
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                  </div>
+                  <div class="shadow"></div>
+                </div>
+                <span class="css">CSS</span>
+              </li>
+              <li>
+                <div class="pie-wrapper progress-90 style-2">
+                  <span class="label">90%</span>
+                  <div class="pie">
+
+                    <div class="left-side half-circle"></div>
+                    <div class="right-side half-circle"></div>
+                  </div>
+                  <div class="shadow"></div>
+                </div>
+                <span>Swift</span>
+              </li>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
